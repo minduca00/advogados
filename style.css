@@ -188,7 +188,7 @@ p{ margin:0; }
 .hero-inner{
   max-width:var(--container); margin:0 auto; padding:0 32px;
   display:grid; grid-template-columns:1fr; gap:56px;
-  align-items:center;
+  align-items:center; min-width:0;
 }
 @media(min-width:900px){
   .hero-inner{ grid-template-columns:1.15fr 0.85fr; gap:64px; }
@@ -273,9 +273,10 @@ p{ margin:0; }
 
 @media(max-width:639px){
   .hero{ padding-top:116px; padding-bottom:42px; }
-  .hero-inner{ padding-left:20px; padding-right:20px; gap:38px; }
+  .hero-inner{ padding-left:20px; padding-right:20px; gap:38px; min-width:0; }
+  .hero-copy{ min-width:0; }
   .hero h1{ font-size:42px; }
-  .hero-areas{ line-height:1.7; }
+  .hero-areas{ line-height:1.7; overflow-wrap:anywhere; }
   .hero-lede{ font-size:16px; margin-bottom:28px; }
   .hero-actions{ flex-direction:column; align-items:stretch; gap:10px; }
   .hero-actions .btn{ width:100%; }
