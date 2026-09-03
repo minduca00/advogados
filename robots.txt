@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://advogadosgmp.com.br/sitemap.xml
